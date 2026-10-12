@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПР3 — Проверки</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./checks/browser.checks.js"></script>
+  <script type="module" src="./checks/extra.checks.js"></script>
+</head>
+<body>
+  <main class="page">
+    <p><a href="./index.html">К приложению</a></p>
+    <h1>Браузерные проверки</h1>
+    <p>Проверки запускаются автоматически. Не нажимайте элементы в области приложения до завершения.</p>
+
+    <section class="panel">
+      <h2>Сводка</h2>
+      <p id="check-summary">Проверки ещё не завершены.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Результаты</h2>
+      <ul id="check-results" class="check-list"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Текстовый протокол</h2>
+      <pre id="check-log"></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Проверяемое приложение</h2>
+      <iframe id="test-frame" class="test-preview" title="Проверяемое приложение"></iframe>
+      <div id="test-fixture" class="test-fixture" aria-hidden="true"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Проверки расширения Б</h2>
+      <p id="extra-summary">Проверки расширения ещё не завершены.</p>
+      <ul id="extra-results" class="check-list"></ul>
+      <h3>Протокол расширения</h3>
+      <pre id="extra-log"></pre>
+    </section>
+  </main>
+</body>
+</html>
